@@ -5,6 +5,8 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
+# ============== Fiture Untuk Line Bot 4 admin ================ #
+
 #cl = LINETCR.LINE()
 #cl.login(qr=True)
 #cl.loginResult()
@@ -21,19 +23,27 @@ import time,random,sys,json,codecs,threading,glob,re
 #kc.login(qr=True)
 #kc.loginResult()
 
+#cl = LINETCR.LINE()
+#cl.login(token="authoken kamu")
+
+#ki = LINETCR.LINE()
+#ki.login(token="authoken kamu")
+
+#kk = LINETCR.LINE()
+#kk.login(token="autotoken kamu")
+
+#kc = LINETCR.LINE()
+#kc.login(token="authoken kamu")
+
+#cl
+
+# ============== Fiture Untuk Line Bot 4 admin ================ #
+
 cl = LINETCR.LINE()
-cl.login(token="authoken kamu")
+cl.login(qr=True)
+cl.loginResult()
 
-ki = LINETCR.LINE()
-ki.login(token="authoken kamu")
-
-kk = LINETCR.LINE()
-kk.login(token="autotoken kamu")
-
-kc = LINETCR.LINE()
-kc.login(token="authoken kamu")
-
-cl
+ki = kk = kc = cl
 
 print "login success"
 reload(sys)
@@ -82,8 +92,8 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,"u33d60593ad472ed11e7907fb1daee6ae"]
-admin=["u33d60593ad472ed11e7907fb1daee6ae"]
+Bots=[mid,Amid,Bmid,Cmid,"YOUR_MID_HERE"]
+admin=["YOUR_MID_HERE"]
 wait = {
     'contact':True,
     'autoJoin':True,
