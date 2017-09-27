@@ -39,15 +39,15 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" [R.A] BOT Menu V.2  􀔃􀄆red check mark􏿿
+helpMessage =""" Fluzzy BOT Menu V.2  􀔃􀄆red check mark􏿿
 
 􀔃􀅕red arrow right􏿿 Command Public
 [Bot?]     Cek Akun Bot
 [Jam Update] Update jam Bot
 [Id Group] Cek Id Group
 [Ginfo]    Group Info
-[Mid RA]   Cek All mid Bot
-[RA 1/2/3/4] Cek Mid Bot
+[Mid FL]   Cek All mid Bot
+[FL 1/2/3/4] Cek Mid Bot
 [Respon]   Cek Respon Bot
 [Speedbot] Cek Kecepatan Bot
 [Up]       Fungsi Spam Chat
@@ -99,10 +99,10 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"[R.A]-First ",
-    "cName2":"[R.A]-Second ",
-    "cName3":"[R.A]-third ",
-    "cName4":"[R.A]-Fourth ",
+    "cName":"Fluzzy-Frist ",
+    "cName2":"Fluzzy-Second ",
+    "cName3":"Fluzzy-Third ",
+    "cName4":"Fluzzy-Fourth ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -1446,7 +1446,7 @@ def bot(op):
                     kc.sendText(msg.to,"Aktifkan jam terlebih dulu")
          #-------------Fungsi Jam Update Finish-------------------#
 
-            elif msg.text == "$set":
+            elif msg.text == "Check","check":
                     cl.sendText(msg.to, "Check sider")
                     ki.sendText(msg.to, "Check sider")
                     kk.sendText(msg.to, "Check sider")
@@ -1460,7 +1460,7 @@ def bot(op):
                     wait2['readMember'][msg.to] = ""
                     wait2['ROM'][msg.to] = {}
                     print wait2
-            elif msg.text == "$read":
+            elif msg.text == "Point","point":
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -1810,49 +1810,16 @@ def bot(op):
                 cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
                 ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
                 kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
         #-------------Fungsi Spam Finish---------------------#
 #-----------------------------------------------
             elif "Bc " in msg.text:
 				bctxt = msg.text.replace("Bc ","")
 				ki.sendText(msg.to,(bctxt))
 				kk.sendText(msg.to,(bctxt))
-				kc.sendText(msg.to,(bctxt))
+				kc.sendText(msg.to,(bctxt))  
 #-----------------------------------------------
-
-            elif msg.text in ["Cv say hi"]:
-                ki.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-
-#-----------------------------------------------
-
-            elif msg.text in ["Cv say hinata pekok"]:
-                ki.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say didik pekok"]:
-                ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say bobo ah","Bobo dulu ah"]:
-                ki.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say chomel pekok"]:
-                ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di Chivas Family Room")
+            elif msg.text in ["Welcome"]:
+                ki.sendText(msg.to,"Selamat datang")
                 kk.sendText(msg.to,"Jangan nakal ok!")
 #-----------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
