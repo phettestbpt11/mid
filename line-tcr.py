@@ -1456,7 +1456,7 @@ def bot(op):
                     kc.sendText(msg.to,"Aktifkan jam terlebih dulu")
          #-------------Fungsi Jam Update Finish-------------------#
 
-            elif msg.text == "Check","check":
+            elif msg.text == ["Check","check"]:
                     cl.sendText(msg.to, "Check sider")
                     ki.sendText(msg.to, "Check sider")
                     kk.sendText(msg.to, "Check sider")
@@ -1470,7 +1470,7 @@ def bot(op):
                     wait2['readMember'][msg.to] = ""
                     wait2['ROM'][msg.to] = {}
                     print wait2
-            elif msg.text == "Point","point":
+            elif msg.text == ["Point","point"]:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -1480,9 +1480,9 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "People who readed %s\nthat's it\n\nPeople who have ignored reads\n%sIt is abnormal ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "=======Tercyduk===== %s\n====Tukang Ngintip====\n%s\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
-                        cl.sendText(msg.to, "An already read point has not been set.\n「set」you can send ♪ read point will be created ♪")
+                        cl.sendText(msg.to, "Check Tukang sider : on ♪")
 #-----------------------------------------------
 
 #-----------------------------------------------
